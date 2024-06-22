@@ -73,7 +73,7 @@ if choice == 'Description Classification':
 
     elif type == "Upload description file":
         st.markdown("### Upload description file ###")
-        uploaded_file = st.file_uploader("Please upload 'csv' or 'xlsx' file", type=["csv", "xlsx"])
+        uploaded_file = st.file_uploader("Please upload a 'csv' or 'xlsx' file with a single column and a column header", type=["csv", "xlsx"])
 
         if uploaded_file is not None:
             if uploaded_file.name.endswith('.csv'):
